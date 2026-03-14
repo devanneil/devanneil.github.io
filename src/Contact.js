@@ -25,7 +25,7 @@ export default function Contact() {
       <a href="https://github.com/devanneil" target="_blank" rel="noopener noreferrer">
         <img className='imageLink' src={githubLogo} alt="The github logo"></img>
       </a>
-      <a href="www.linkedin.com/in/devan-neil" target="_blank" rel="noopener noreferrer">
+      <a href="https://linkedin.com/in/devan-neil" target="_blank" rel="noopener noreferrer">
         <img className='imageLink' src={linkedInLogo} alt="The linkedIn logo"></img>
       </a>
       <a href="https://www.facebook.com/profile.php?id=100008669838346" target="_blank" rel="noopener noreferrer">

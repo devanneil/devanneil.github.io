@@ -4,6 +4,8 @@ import ContentBlock from './contentBlock'
 import HMFrame from './pictures/HMFrame.png'
 import Logo from './pictures/LogoSmall.png'
 import LegoRobot from './pictures/LegoRobot.png'
+import PaddockPal from './pictures/paddock-pal.jpg'
+import RoSESoil from './pictures/SoilDepthResults.png'
 export default function Projects() {
   return <div className='contentBody'>
     <TitleBar title="Project Gallery" details={"A comprehensive list of my engineering projects"} imageSrc={Robot} selectedPage="Projects" imageAlt="Headshot"/>
@@ -63,15 +65,16 @@ export default function Projects() {
 
     <ContentBlock> 
       <div>
-        <h1 className='sectionHeader'>Simulation Verification</h1>
+        <h1 className='sectionHeader'>Simulation</h1>
         <p className='contentSection'>
-          This is a placeholder for the projects section. Work in Progress.
+          As part of the Harvestman project, I am planning on developing and distributing Gazebo config files,
+          and the appropriate config files for integrating the Harvestman with Quantum Enine, which you can read about on this page
         </p>
       </div>
       
     </ContentBlock>
 
-    <ContentBlock image={Logo} imageAlt="The CAD for the Krap Shoot" caption='The CAD for the Paddock Pal V.2, this is not reflective of the final design'> 
+    <ContentBlock image={PaddockPal} imageAlt="The Paddock Pal V.2 as of 3/10/2026" caption='The Paddock Pal V.2 as of 3/10/2026'> 
       <div>
         <h1 className='sectionHeader'>Krap Shoot</h1>
         <p className='contentSection'>
@@ -145,7 +148,7 @@ export default function Projects() {
     <ContentBlock>
       <h1 className='sectionHeader' style={{ fontSize: '4rem'}}>Software Projects</h1>
       <p className='contentSection' style={{ textAlign: 'center'}}>
-        Quip goes here
+        Here there be monsters
       </p>
     </ContentBlock >
 
@@ -153,17 +156,51 @@ export default function Projects() {
       <div>
         <h1 className='sectionHeader'>Quantum Engine</h1>
         <p className='contentSection'>
-          This is a placeholder for the projects section. Work in Progress.
+          Quantum Engine is a project I am working on alongside one of my friends and colleagues, Courage Gallegos. 
+          Our goal with Quantum Engine is to build a lightweight rendering and simulation tool.
+          Quantum Engine is built entirely in C++ using openGL.
+        <br/>
+        <br/>
+          The major design goals of Quantum are as follows:
+            <ul style={{marginLeft: '50px'}}>
+              <li>Modular control over included components</li>
+              <li>Swappable rendering backend</li>
+              <li>Bindings for other languages</li>
+            </ul>
+          These are all important for our final goal of having a single suite of tools, the Quantum Suite,
+          for rendering, simulation, game development and 3D graphics tools.
+          <br/>
+          <br/>
+          While we have a working prototype of the actual rendering tool, we have not yet verified swapping
+          the rendering backend, and we want to work on making the code a lot more efficient and user friendly.
+          The next stpes for this project are to repair the backend linear algebra, design a UI system, 
+          build a node graph tool and a compute graph tool, and design the implementation for a 
+          generalized shader script from the node graph. From there we design the tools we actually want.
+          I am going to work on a simulation tool for basic rigid body physics and I am going to make a ROS2 bridge.
+          Courage wants to design a game engine and build a video game on it.
         </p>
       </div>
       
     </ContentBlock>
 
-    <ContentBlock> 
+    <ContentBlock image={RoSESoil} imageAlt='An image showing varios camera feeds and the post processing results' 
+      caption='Pictured here is a single frame of the processed video. We hadn&apos;t calculated the actual depth estimate at this time, and further work is being done for a smoother final result.'> 
       <div>
         <h1 className='sectionHeader'>RoSE Lab</h1>
         <p className='contentSection'>
-          This is a placeholder for the projects section. Work in Progress.
+          I am a member of the Colorado School of Mines {""}
+          <a
+            href="https://github.com/RoSE-Lab-Admin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          RoSE Lab
+          </a>.
+          My work with the RoSE Lab is with the digital twin team, where we are bulding a digital twin of the lunar
+          surface inside Nvidia's Isaac Sim, and on a project with the terramechanics team attempting to estimate the soil
+          properties from videos recording the wheels during trials. This terramechanics project is where I've made more contribution,
+          Attached is a screenshot of my team's methods, where we are using a circular RANSAC algorithm to estimate the wheel position
+          and an edge detection algorithm to estimate the total sinkage. From this data we'll be able to determine several soil properties.
         </p>
       </div>
       
@@ -173,7 +210,22 @@ export default function Projects() {
       <div>
         <h1 className='sectionHeader'>Automated Apple Harvesting COBOT</h1>
         <p className='contentSection'>
-          This is a placeholder for the projects section. Work in Progress.
+          This project is in association with Randy Allard and the Washington Fruit Tree Commission
+          <br/>
+          <br/>
+          In this project we are Investigating automated apple harvesting using a DUCO GCR16-200 COBOT. 
+          A previous team has already trained an ONNX model for vision based detection of apples, 
+          now we just need to pick them. Randy Allard has previously designed a working apple harvesting machine,
+          and he's providing the steps to actually pick the apples. We are going to use a suction cup and a vacuum generator
+          to automatically grab the apples and we are going to use a routine to twist the apples off the stem. 
+          This is the most effective way we've found to achieve this. 
+          <br/>
+          <br/>
+          My role in this project is to get the robot itself working.
+          This will consist of a ROS2 interface to drive the robot, a setup with MoveIt to handle the inverse kinematics,
+          a simulation to visualize the robot's planned behavior, and the detection and picking runtimes. I am also planning 
+          on building a user's manual, but this is not part of the project.
+          This is an incredibly enjoyable project and we will be able to open source the code. 
         </p>
       </div>
       
@@ -186,21 +238,17 @@ export default function Projects() {
       </p>
     </ContentBlock >
 
-    <ContentBlock> 
-      <div>
-        <h1 className='sectionHeader'>Freshman Design</h1>
-        <p className='contentSection'>
-          This is a placeholder for the projects section. Work in Progress.
-        </p>
-      </div>
-      
-    </ContentBlock>
-
-    <ContentBlock> 
+    <ContentBlock > 
       <div>
         <h1 className='sectionHeader'>3D Printer Build</h1>
         <p className='contentSection'>
-          This is a placeholder for the projects section. Work in Progress.
+          I'm currently in the process of building a corexy dual extruder 3D printer. I am following the instructions
+          for convertin 2 old Ender 3's {""}
+          <a
+            href="https://github.com/RoSE-Lab-Admin"
+            target="_blank"
+            rel="noopener noreferrer"
+          > here </a>, but I have needed to make modifications for my Ender 3 Pro's and I am building a custom extruder.
         </p>
       </div>
       
@@ -210,7 +258,11 @@ export default function Projects() {
       <div>
         <h1 className='sectionHeader'>Drone Build</h1>
         <p className='contentSection'>
-          This is a placeholder for the projects section. Work in Progress.
+          As part of my high school courses, I was able to take a class which had a team of students building a drone together.
+          I was in charge of assembling, configuring, and calibrating the drone itself.
+          I learned how to use QGroundControl to interface with the drone and how to program a PIXHAWK flight controller.
+          While the goal of the class was not met, that being getting our commercial drone license through the FAA, 
+          I was able to complete my Part 107 recreational TRUST licence, and have kept it maintained since.
         </p>
       </div>
       

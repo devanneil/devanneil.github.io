@@ -10,15 +10,18 @@ export default function Company() {
         3D Neil Tech
         </h1>
         <p className='contentSection'>
-        This is currently a placeholder, soon we will have contact information and the information you'll need to place an order
-        <br /><br />
-        Currently 3D Neil Tech isn't much more than a name, it started when I was in 7th grade learning how 3D printers work.
-        I loved the ability to create anything from an idea and I wanted to produce toys for my community.
-        I only ever did one toy, but my biggest market was medical PPE.
-        During the Covid-19 pandemic I was tasked with manufacturing over 200 plastic face shields for my community. 
-        Using the single printer I had I 3D printed a headband piece and attached foam protection and a plastic face shield. 
-        I distributed these face shields to my community to help keep critical healthcare infrastructure running.
-        I was even able to send 50 of these masks to a part of the Colorado state government. 
+        The modern home is full of smart technology that's so painfully limited. Your smart home speaker can't do the dishes
+        and your Roomba will never be more than a vacuum. On top of that these technologies are at best unknowable black boxes.
+        This is the purpose of 3D Neil Tech. We provide modular, secure home robotics solutions to treat your daily needs.
+        3D Neil Tech prioritizes affordability such that robotics can become accessible to anyone. Alongside this we prioritize
+        security and privacy as these robots belong in the home. Most of all we provide educational resources to make sure that
+        your robot isn't some black box solution that's far too complex to fix. 
+        <br/>
+        <br/>
+        Our flagship program is the Harvestman Project. The Harvestman Project aims to produce a hexapod robotic frame with
+        endless possibility. As part of this project, 3D Neil Tech is developing educational curriculum for high school students
+        to get the technology into their hands to solve real world problems. Development into the Harvestman kit is ongoing,
+        as we continue to refine and improve the design for ease of use, durability, and industry standard practices.
         </p>
       </div>
     </ContentBlock>
@@ -29,13 +32,13 @@ export default function Company() {
         The Future
         </h1>
         <p className='contentSection'>
-        In the next few months 3D Neil Tech will be developing a full robotics curriculum for the Harvestman Project.
-        This will be distributed, along with Harvestman kits, to high school students to teach the basics of robotics.
-        The goal is to provide educational resources to students who would not otherwise get the chance to learn about robotics.
+        The Harvestman Project is the first step into a broad robotics ecosystem.
+        The future of 3D Neil Tech has us providing household robotics for all of your needs. 
+        As part of our vision, by providing educational materials we believe that we'll raise up the next generation of problem solvers
+        with the tools they'll need to automate the tasks they face in their day-to-day lives.
         <br/><br/>
-        Additionally, 3D Neil Tech will regain some manufacturing capabilities to 3D print parts using a new printer, which is currently in pieces on my desk.
-        While I do not hope to compete with print farms, I do believe I'll be able to use this capacity to quickly develop autonomous applications for the Harvestman Project.
-        As was mentioned above, I hope to begin research into automated gardening by next spring (2027).
+        Additionally, 3D Neil Tech aims to investigate Orbital Robotics to clean up our orbit spaces around Earth
+        and provdie access to space science for people of all walks of life
         </p>
       </div>
     </ContentBlock>
