@@ -1,12 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.72ac8499.css",
-    "main.js": "/static/js/main.5a110f92.js",
+    "main.js": "/static/js/main.fd9364cd.js",
     "static/media/3DPrinter.png": "/static/media/3DPrinter.9cbfde7876271f06ad17.png",
     "static/media/LogoSmall.png": "/static/media/LogoSmall.2258e1485b1343e9bb7a.png",
     "static/media/LegoRobot.png": "/static/media/LegoRobot.4517ee66fa93bcb350c0.png",
+    "static/media/SoilDepthResults.png": "/static/media/SoilDepthResults.3a4a0820d530fe8bc6aa.png",
     "static/media/Headshot2.png": "/static/media/Headshot2.9ca0091e8b51f7f8fb6c.png",
     "static/media/Headshot.png": "/static/media/Headshot.75f795c3cd8b663dbf4f.png",
+    "static/media/paddock-pal.jpg": "/static/media/paddock-pal.bb005ba80d0666126656.jpg",
     "static/media/SelfFull.jpg": "/static/media/SelfFull.f2e4f1cb3aa3775384f5.jpg",
     "static/media/HMFrame.png": "/static/media/HMFrame.b30601aa271ab4286403.png",
     "static/media/githubLogoClear.png": "/static/media/githubLogoClear.c5642ef2a745cf95f2a6.png",
@@ -14,10 +16,10 @@
     "static/media/robot.jpg": "/static/media/robot.c8f2ab287417e18f8753.jpg",
     "index.html": "/index.html",
     "main.72ac8499.css.map": "/static/css/main.72ac8499.css.map",
-    "main.5a110f92.js.map": "/static/js/main.5a110f92.js.map"
+    "main.fd9364cd.js.map": "/static/js/main.fd9364cd.js.map"
   },
   "entrypoints": [
     "static/css/main.72ac8499.css",
-    "static/js/main.5a110f92.js"
+    "static/js/main.fd9364cd.js"
   ]
 }
